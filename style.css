@@ -1,0 +1,240 @@
+/* set up */
+@font-face {
+    font-family:Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+/* global page styles */
+*{
+    font-family:Montserrat, Helvetica, Arial, sans-serif;
+    color: rgb(55, 55, 55);
+}
+
+html{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 5.25rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1rem;
+}
+
+button{
+    background-color: rgb(55, 55, 55);
+    color:white;
+    font-size:1rem;
+    border-radius: 10px;
+}
+
+body{
+    background-image: linear-gradient(0deg, rgba(246,196,218,1) 0%, rgba(167,203,245,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* header */
+header{
+    width:100vw;
+    position: relative;
+    background-color: white;
+}
+
+#logo{
+    display:inline-block;
+}
+
+#navbar{
+    display:inline-block;
+    position:absolute;
+    right:0;
+    bottom:5px;
+}
+
+#logoName{
+    width: 80px;
+    height: 60px;
+    display:inline-block;
+    background-color: rgb(55, 55, 55);
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar div{
+    display:inline-block;
+    color: rgb(55, 55, 55);
+    font-size:1rem;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+/* footer */
+footer{
+    background-color: white;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div{
+    display:inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:rgb(55, 55, 55);
+}
+
+/* homepage main */
+main{
+    width:80%;
+    margin:auto;
+}
+
+#opener{
+    display:flex;
+}
+
+#IDpic{
+    height: 50vh;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 20px;
+}
+
+#text1{
+    margin-top: 4%;
+    margin-right: 10%;
+    margin-left: 5%;
+    color:rgb(55, 55, 55); 
+}
+
+.pages{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgba(255, 255, 255, 0.75);
+    width:80%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.textPages{
+    margin: 20px;
+}
+
+.images{
+    height: 300px;
+    margin: 20px;
+}
+
+/* contact page */
+.pagetitle, .pageh2, form{
+    text-align: center;
+}
+
+form{
+    margin-bottom: 50px;
+}
+
+#name, #mail, #message{
+    display:inline-block;
+    width:20%;
+}
+
+#submit, #reset{
+    background-color: rgb(55, 55, 55);
+    color:white;
+    font-size:1rem;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.socials{
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contactLink{
+    display: flex;
+    justify-content: center;
+}
+
+/* about */
+.row{
+    display:flex;
+}
+
+#profile{
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20px;
+}
+
+#description{
+    width:45%;
+}
+
+
+#resume{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+#resumesections2, #resumesections3, #resumesections4{
+    margin-top: 5%;
+}
+
+.panel {
+    padding: 0 18px;
+    border-radius: 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  #resumepdf{
+    text-decoration-line: underline;
+  }
