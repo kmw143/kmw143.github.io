@@ -68,7 +68,7 @@ body{
 
 /* header */
 header{
-    width:100vw;
+    width:100%;
     position: relative;
     background-color: white;
 }
@@ -104,8 +104,8 @@ header{
     display:inline-block;
     color: rgb(55, 55, 55);
     font-size:1rem;
-    padding-left: 50px;
-    padding-right: 20px;
+    margin-left:2vw;
+    margin-right:2vw;
 }
 
 a{
@@ -114,18 +114,18 @@ a{
 
 /* footer */
 footer{
-    width: 100vw;
+    width: 100%;
     background-color: white;
     margin-top: 50px;
     margin-bottom: 0px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
 footer div{
     display:inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin:auto;
     color:rgb(55, 55, 55);
     text-decoration: underline;
 }
