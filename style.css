@@ -51,13 +51,19 @@ button{
     padding: 10px;
 }
 
+button:hover{
+    background-color:rgb(242, 242, 242);
+    color:rgb(55, 55, 55);
+}
+
 body{
     background-image: linear-gradient(0deg, rgba(246,196,218,1) 0%, rgba(167,203,245,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-
+    display:flex;
+    flex-direction:column;
 }
 
 /* header */
@@ -89,6 +95,11 @@ header{
     padding: 20px;
 }
 
+#logoName:hover{
+    background-color:white;
+    color:rgb(55, 55, 55);
+}
+
 #navbar div{
     display:inline-block;
     color: rgb(55, 55, 55);
@@ -103,9 +114,10 @@ a{
 
 /* footer */
 footer{
-    width: 100%;
+    width: 100vw;
     background-color: white;
     margin-top: 50px;
+    margin-bottom: 0px;
     padding: 20px;
     text-align: center;
 }
@@ -118,29 +130,45 @@ footer div{
     text-decoration: underline;
 }
 
+p a:hover, a div:hover, #navbar div:hover{
+    color:rgb(92, 203, 255);
+}
+
 /* homepage main */
 main{
-    width:80%;
+    width:80vw;
     margin:auto;
+    min-height: calc(100vh - 225px);
 }
 
 #opener{
+    width:70%;
     display:flex;
+    margin:auto;
+    margin-top: 4%;
 }
 
 #IDpic{
-    height: 50vh;
-    margin-top: 8%;
-    margin-left: 10%;
+    width: 20vw;
+    margin-top: 6%;
     margin-right: 5%;
     border-radius: 20px;
+    float:left;
 }
 
-#text1{
-    margin-top: 4%;
-    margin-right: 10%;
-    margin-left: 5%;
-    color:rgb(55, 55, 55); 
+@media only screen and (max-width: 768px) {
+    #opener{
+        flex-direction:column;
+    }
+    #text1{
+        align-items: center;
+    }
+
+    #IDpic{
+        width: 40vw;
+        float:none;
+        margin:auto;
+    }
 }
 
 .pages{
@@ -148,7 +176,6 @@ main{
     justify-content:space-between;
     background-color: rgba(255, 255, 255, 0.75);
     width:80%;
-    min-width: 800px;
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
@@ -161,6 +188,18 @@ main{
 .images{
     height: 300px;
     margin: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .pages{
+        flex-direction: column;
+    }
+    .images {
+        width:95%;
+        height:auto;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 /* contact page */
@@ -183,7 +222,7 @@ form{
 }
 
 .socials{
-    width:10vw;
+    width:5vw;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -214,6 +253,7 @@ form{
     margin-left: 5%;
 }
 
+/* Adapted from https://www.w3schools.com/howto/howto_js_accordion.asp */
 .accordion {
     background-color: #eee;
     color: #444;
@@ -224,6 +264,10 @@ form{
     border: none;
     outline: none;
     transition: 0.4s;
+}
+
+.accordion:hover{
+    background-color: rgb(195, 195, 195);
 }
 
 #resumesections2, #resumesections3, #resumesections4{
@@ -249,9 +293,21 @@ form{
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+/* Adapted from https://www.w3schools.com/howto/howto_js_accordion.asp */
 
 #resumepdf{
     text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+
+    #description, #resume{
+        width:80%;
+        margin:auto;
+    }
 }
 
 
@@ -273,18 +329,22 @@ form{
 
 .blogimages{
     display:block;
-    height: 40vh;
-    max-width: 800px;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blogimages{
+        width:80%;
+    }
 }
 
 .blogcontent{
     background-color: white;
     border-radius: 10px;
     padding: 5px 20px;
-    min-width: 800px;
 }
 
 .bloglink{
