@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Kami Wang</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -32,6 +33,33 @@
                 <div>Contact</div>
             </a>
         </div>
+
+        <div id="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="navLinks">
+                <a href="index.html">
+                    Homepage
+                </a>
+                
+                <a href="projects.html"> 
+                    Projects
+                </a>
+    
+                <a href="interests.html">
+                    Interests
+                </a>
+    
+                <a href="about.html">
+                    About
+                </a>
+                
+                <a href="contact.html">
+                    Contact
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -47,32 +75,38 @@
 
         <div class="pages" id="projects">
             <div class="textPages">
-                <h2>Projects</h2>
+                <a href="projects.html"><h2>Projects</h2></a>
                 <p>View a few of my favorite works, including a kart-racing game, my first job, and a school news broadcast. </p>
                 <a href="projects.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img\desertracers.png" title="DesertRacers" alt="A game menu with the title DesertRacers by Kami with a blue avatar sitting on a go-kart.">
-        </div>
+            <a href="projects.html">
+                <img class="images" src="img\desertracers.png" title="DesertRacers" alt="A game menu with the title DesertRacers by Kami with a blue avatar sitting on a go-kart.">
+            </a>
+            </div>
 
         <div class="pages" id="interests">
             <div class="textPages">
-                <h2>Interests</h2>
+                <a href="interests.html"><h2>Interests</h2></a>
                 <p>Read some thoughts about my interests. </p>
                 <a href="interests.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img\sandprint.JPEG" title="Sandprint by Kami" alt="A black and white photo of a footprint in the sand by a beach.">
+            <a href="interests.html">
+                <img class="images" src="img\sandprint.JPEG" title="Sandprint by Kami" alt="A black and white photo of a footprint in the sand by a beach.">
+            </a>
         </div>
 
         <div class="pages" id="about">
             <div class="textPages">
-                <h2>About</h2>
+                <a href="about.html"><h2>About</h2></a>
                 <p>Learn more about who I am, what I do, where I come from, and how I got here.</p>
                 <a href="about.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img\graduation.JPG" title="Graduation Day" alt="A girl, Kami, holding a bouquet at her high school graduation.">
+            <a href="about.html">
+                <img class="images" src="img\graduation.JPG" title="Graduation Day" alt="A girl, Kami, holding a bouquet at her high school graduation.">
+            </a>
         </div>
     </main>
 
@@ -81,5 +115,7 @@
             <div>Contact Me</div>
         </a>
     </footer>
+
+    <script src="nav.js"></script>
 </body>
 </html>

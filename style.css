@@ -66,6 +66,26 @@ body{
     flex-direction:column;
 }
 
+@media only screen and (max-width: 768px) {
+    html{
+        font-size:16px;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    #text1 h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .pageh2{
+        margin-left:3%;
+        margin-right:3%;
+    }
+}
+
 /* header */
 header{
     width:100%;
@@ -108,8 +128,49 @@ header{
     margin-right:2vw;
 }
 
+#topnav{
+    display:none;
+}
+
 a{
     text-decoration-line: none;
+}
+
+@media only screen and (max-width: 500px) {
+    #logoName{
+        width:50px;
+        height:37.5px;
+        font-size:1rem;
+        padding:12.5px;
+    }
+
+    #navbar{
+        display:none;
+    }
+
+    #topnav{
+        display:inline-block;
+        overflow:hidden;
+        background-color:white;
+        position: absolute;
+        right: 0;
+        top:12%;
+    }
+
+    #topnav #navLinks{
+        display:none;
+    }
+
+    #topnav a{
+        color:rgb(55, 55, 55);
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    #topnav a .icon{
+        display: block;
+    }
 }
 
 /* footer */
@@ -157,17 +218,19 @@ main{
 }
 
 @media only screen and (max-width: 768px) {
-    #opener{
-        flex-direction:column;
+    main{
+        width:100vw;
     }
     #text1{
-        align-items: center;
+        text-align:center;
     }
 
     #IDpic{
+        display:block;
         width: 40vw;
         float:none;
-        margin:auto;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
@@ -190,6 +253,16 @@ main{
     margin: 20px;
 }
 
+a h2:hover{
+    text-decoration: underline;
+    color:rgb(92, 203, 255);
+}
+
+.images:hover{
+    opacity: 0.3;
+}
+
+
 @media only screen and (max-width: 1100px) {
     .pages{
         flex-direction: column;
@@ -197,9 +270,12 @@ main{
     .images {
         width:95%;
         height:auto;
-        margin: auto;
-        margin-bottom: 10px;
+        margin:2.5%;
     }
+
+    /* .pages button{
+        display:none;
+    } */
 }
 
 /* contact page */
@@ -230,6 +306,13 @@ form{
 #contactLink{
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .socials{
+        width:50px;
+        margin-top:10px;
+    }
 }
 
 /* about */

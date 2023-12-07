@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interests - Kami Wang</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header> 
@@ -31,6 +32,33 @@
                 <div>Contact</div>
             </a>
         </div>
+
+        <div id="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="navLinks">
+                <a href="index.html">
+                    Homepage
+                </a>
+                
+                <a href="projects.html"> 
+                    Projects
+                </a>
+    
+                <a href="interests.html">
+                    Interests
+                </a>
+    
+                <a href="about.html">
+                    About
+                </a>
+                
+                <a href="contact.html">
+                    Contact
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -39,42 +67,50 @@
     
         <div class="pages" id="Photography">
             <div class="textPages">
-                <h2>Photography</h2>
+                <a href="interests-photography.html"><h2>Photography</h2></a>
                 <p>View a mini-gallery of my favorite photographs. Some come from photography assignments, some come from travels, some come from daily life. I hope you enjoy!</p>
                 <a href="interests-photography.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img/sandprint.JPEG" title="Sandprint by Kami" alt="A black and white photo of a footprint in the sand by a beach.">
+            <a href="interests-photography.html">
+                <img class="images" src="img/sandprint.JPEG" title="Sandprint by Kami" alt="A black and white photo of a footprint in the sand by a beach.">
+            </a>
         </div>
 
         <div class="pages" id="Travel">
             <div class="textPages">
-                <h2>Travel</h2>
+                <a href="interests-travel.html"><h2>Travel</h2></a>
                 <p>Interstate road trips to national parks, 6am RyanAir flights for weekends in France, holidays in Asia and my first solo trip/staycation in Shanghai. Read more about my travels with my family, my friends, and by myself.</p>
                 <a href="interests-travel.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img\lake-como.jpg" title="NBT in Lake Como, Italy" alt="6 friends at Lake Como, Italy">
+            <a href="interests-travel.html">
+                <img class="images" src="img\lake-como.jpg" title="NBT in Lake Como, Italy" alt="6 friends at Lake Como, Italy">
+            </a>
         </div>
 
         <div class="pages" id="Music">
             <div class="textPages">
-                <h2>Music</h2>
+                <a href="interests-music.html"><h2>Music</h2></a>
                 <p>You're lucky, just in time for Spotify Wrapped 2023. Take a peek at my playlists. Fun fact: Kami was a drummer in her middle school band.</p>
                 <a href="interests-music.html"><button>Click to see more</button></a>
             </div>
-            
-            <img class="images" src="img\golden-child-concert.jpg" title="Golden Child Meet & Live Tour in San Jose" alt="Kpop group, Golden Child, bowing after their concert in San Jose, California.">
+           
+            <a href="interests-music.html">
+                <img class="images" src="img\golden-child-concert.jpg" title="Golden Child Meet & Live Tour in San Jose" alt="Kpop group, Golden Child, bowing after their concert in San Jose, California.">
+            </a>
         </div>
 
         <div class="pages" id="TvFilm">
             <div class="textPages">
-                <h2>TV/Film</h2>
+                <a href="interests-tvfilm.html"><h2>TV/Film</h2></a>
                 <p>Everything I watched in 2022 and 2023 so far, RATED. From Korean romance dramas to Hollywood blockbuster action to reality TV to black-and-white experimental short films, I dish my opinions. But beware, some may be unpopular. </p>
                 <a href="interests-tvfilm.html"><button>Click to see more</button></a>
             </div>
             
-            <img class="images" src="img\watched-22-23.png" title="What I Watched in 2022-23" alt="What I Watched in 2022-23">
+            <a href="interests-tvfilm.html">
+                <img class="images" src="img\watched-22-23.png" title="What I Watched in 2022-23" alt="What I Watched in 2022-23">
+            </a>
         </div>
 
     </main>
@@ -88,5 +124,7 @@
             <div>Contact Me</div>
         </a>
     </footer>
+
+    <script src="nav.js"></script>
 </body>
 </html>
