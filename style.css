@@ -66,6 +66,7 @@ body{
     flex-direction:column;
 }
 
+/* responsiveness, change font sizes for smaller screens */
 @media only screen and (max-width: 768px) {
     html{
         font-size:16px;
@@ -136,6 +137,7 @@ a{
     text-decoration-line: none;
 }
 
+/* responsiveness, resize logo and show hamburger menu for smaller screens */
 @media only screen and (max-width: 500px) {
     #logoName{
         width:50px;
@@ -217,6 +219,7 @@ main{
     float:left;
 }
 
+/* resize for smaller screens */
 @media only screen and (max-width: 768px) {
     main{
         width:100vw;
@@ -262,7 +265,7 @@ a h2:hover{
     opacity: 0.3;
 }
 
-
+/* resize for smaller screens */
 @media only screen and (max-width: 1100px) {
     .pages{
         flex-direction: column;
@@ -272,10 +275,6 @@ a h2:hover{
         height:auto;
         margin:2.5%;
     }
-
-    /* .pages button{
-        display:none;
-    } */
 }
 
 /* contact page */
@@ -308,6 +307,7 @@ form{
     justify-content: center;
 }
 
+/* resize icons for smaller screens */
 @media only screen and (max-width: 1100px) {
     .socials{
         width:50px;
@@ -329,7 +329,6 @@ form{
 #description{
     width:45%;
 }
-
 
 #resume{
     width: 50%;
@@ -382,6 +381,7 @@ form{
     text-decoration-line: underline;
 }
 
+/* responsivness for smaller screens */
 @media only screen and (max-width: 768px) {
     .row{
         flex-direction: column;
