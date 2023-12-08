@@ -336,7 +336,7 @@ form{
 }
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_accordion.asp */
-.accordion {
+.accordion{
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -345,7 +345,6 @@ form{
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
 }
 
 .accordion:hover{
@@ -356,7 +355,7 @@ form{
     margin-top: 5%;
 }
 
-.panel {
+.panel{
     padding: 0 20px;
     border-radius: 10px;
     background-color: white;
@@ -364,15 +363,14 @@ form{
     overflow: hidden;
 }
 
-.accordion:after {
+.accordion:after{
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
   }
   
-.active:after {
+.active:after{
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 /* Adapted from https://www.w3schools.com/howto/howto_js_accordion.asp */
